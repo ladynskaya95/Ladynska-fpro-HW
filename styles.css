@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; 
+    gap: 10px; 
+    height: 100vw;
+}
+
+.categories {
+    cursor: pointer;
+    grid-column: 1; 
+    padding: 30px;
+    
+   background-color: rgba(121, 159, 230, 0.747);
+}
+
+.products {
+    padding: 50px;
+    cursor: pointer;
+    grid-column: 2; 
+}
+
+.product-info {
+    padding: 30px;
+    grid-column: 3;
+   
+}
