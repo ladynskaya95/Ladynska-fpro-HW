@@ -3,9 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="registration-form">
+    <h3>Форма реєстрації</h3>
     
+      <label for="firstName">Ім'я:</label>
+      <input type="text" id="firstName" required>
+      <label for="lastName">Прізвище:</label>
+      <input type="text" id="lastName" required>
+      <label for="birthdate">Дата народження:</label>
+      <input type="text" id="birthdate" required>
+   <div  class="inline">   
+    <span>Стать:</span>
+      <input type="radio" name="gender" value="Чоловіча">Чоловіча
+      <input type="radio" name="gender" value="Жіноча">Жіноча
+    </div>
+      
+      <label for="city">Місто:</label>
+      <select id="city" required>
+        <option value="Kyiv">Київ</option>
+        <option value="Vinnytsya">Вінниця</option>
+        <option value="Dnipro">Дніпро</option>
+        <option value="Donetsk">Донецьк</option>
+        <option value="Zaporizhya">Запоріжжя</option>
+        <option value="Ivano-frankivsk">Івано-Франківськ</option>
+        <option value="Kropyvnytskiy">Кропивницький</option>
+        <option value="Luhansk">Луганськ</option>
+        <option value="Lviv">Львів</option>
+        <option value="Mykolaiv">Миколаїв</option>
+        <option value="Odesa">Одеса</option>
+        <option value="Poltava">Полтава</option>
+        <option value="Rivne">Рівне</option>
+        <option value="Sumy">Суми</option>
+        <option value="Ternopil">Тернопіль</option>
+        <option value="Uzhhorod">Ужгород</option>
+        <option value="Kharkiv">Харків</option>
+        <option value="Chernivtsi">Чернівці</option>
+        <option value="Chernihiv">Чернігів</option>
+        <option value="Cherkasy">Черкаси</option>
+       </select>
+      <label for="address">Адреса:</label>
+      <textarea id="address" rows="1" cols="45" required></textarea>
+      <div class="inline">
+        <span>Мови, якими володієте:</span>
+      <input type="checkbox" id="language1" value="JavaScript">JavaScript
+      <input type="checkbox" id="language2" value="Python">Python
+      <input type="checkbox" id="language3" value="Java">Java
+      </div>
+      
+      <button type="button" id="saveData">Зберегти</button>
+    
+  </div>
+  
+  <div id="data-table" class="hidden">
+    <h3>Введені дані</h3>
+    <table>
+      <tr>
+        <td><strong>Ім'я:</strong></td>
+        <td id="displayFirstName"></td>
+      </tr>
+      <tr>
+        <td><strong>Прізвище:</strong></td>
+        <td id="displayLastName"></td>
+      </tr>
+      <tr>
+        <td><strong>Дата народження:</strong></td>
+        <td id="displayBirthdate"></td>
+      </tr>
+      <tr>
+        <td><strong>Стать:</strong></td>
+        <td id="displayGender"></td>
+      </tr>
+      <tr>
+        <td><strong>Місто:</strong></td>
+        <td id="displayCity"></td>
+      </tr>
+      <tr>
+        <td><strong>Адреса:</strong></td>
+        <td id="displayAddress"></td>
+      </tr>
+      <tr>
+        <td><strong>Мови:</strong></td>
+        <td id="displayLanguages"></td>
+      </tr>
+    </table>
+  </div>
+    </div>
+     <script src="homework112.js"></script>
 </body>
 </html>
