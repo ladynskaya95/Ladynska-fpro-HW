@@ -1,0 +1,87 @@
+.categories {
+    cursor: pointer;
+    
+   background-color: rgba(121, 159, 230, 0.747);
+}
+
+.products {
+    padding: 50px;
+    cursor: pointer;
+}
+
+.product-info {
+    padding: 30px;
+   
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+
+.productContainer{ display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.myOrdersButton {
+  grid-column: 3;
+}
+
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.products div {
+  padding: 10px;
+}
+
+.productInfo div {
+  padding: 20px;
+}
+
+.orders {
+  grid-column: 1 / 4;
+}
+
+.orders div {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.orders button {
+  margin-left: 10px;
+}
+
+.myOrdersButton{
+    background-color:rgba(30, 12, 190, 0.767);
+    color: #ffffff;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+  #order-form{
+   background-color: #b9dfd2;
+    max-width: 450px;
+    height: 260px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    
+  }
+
+  .registration-form{
+display: flex;
+flex-direction: column;
+}
+
+.hidden {
+  display: none; }
+
+
+
