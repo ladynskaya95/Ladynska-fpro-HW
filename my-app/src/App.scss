@@ -1,0 +1,35 @@
+.smiles{
+ text-align: center;
+
+  ul {
+    list-style: none;
+    font-size: 30px;
+
+    li{
+      cursor: pointer;
+      background-color: chartreuse;
+      padding: 20px;
+
+      &:hover{
+        background-color: rgb(79, 143, 16);
+      }
+    }
+    .voteBtn{
+      cursor: pointer;
+      background-color:darkgreen;
+      color: #ffffff;
+      padding: 15px 20px;
+      margin: 15px;
+      border: none;
+    }
+  }
+
+  .resultBtn{
+      cursor: pointer;
+      background-color:rgb(28, 94, 180);
+      color: #ffffff;
+      padding: 15px 20px;
+      margin: 15px;
+      border: none;
+  }
+}
