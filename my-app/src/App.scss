@@ -1,0 +1,28 @@
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(236, 211, 163);
+
+    .contacts{
+        padding: 30px;
+
+        .name{
+            background-color: rgb(22, 168, 22);
+        }
+        .username{
+            background-color: rgb(168, 117, 22);
+        }
+        .phone{
+            background-color:gold
+        }
+    }
+
+    .buttons{
+        padding: 20px;
+    }
+}
+
+
