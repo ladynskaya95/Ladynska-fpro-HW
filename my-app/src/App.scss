@@ -1,0 +1,24 @@
+.App{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(148, 218, 68);
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.photos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
