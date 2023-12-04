@@ -26,13 +26,6 @@ export const TodoList = () => {
     dispatch(deleteCompletedTodos());
   };
 
-  if (status === "loading") {
-    return <div>Loading...</div>;
-  }
-
-  if (status === "failed") {
-    return <div>Error: {error}</div>;
-  }
 
   return (
     <Box>
@@ -46,7 +39,8 @@ export const TodoList = () => {
             Delete Checked Todos
           </Button>
         </span>
-
+        {status === "loading" && <h3>Loading...</h3>}
+        {status === "failed" && <h3>Error: {error}</h3>}
       </div>
       {todoArray.map((todo) => (
         <TodoItem key={todo.id} todo={todo} />
