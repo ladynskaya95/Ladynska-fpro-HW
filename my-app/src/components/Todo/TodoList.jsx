@@ -11,7 +11,6 @@ import {
 
 export const TodoList = () => {
   const { todoArray, status, error } = useSelector(selectTodos);
-  console.log(todoArray);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,7 +32,6 @@ export const TodoList = () => {
         <Button variant="contained" onClick={handleToggleAllTodos}>
           Select All ✅
         </Button>
-
         <span>
           <Button variant="contained" onClick={handleDeleteCompletedTodos}>
             Delete Checked Todos
